@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | BabaTyres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.jpg" width="30px" height="30px">
+        <img src="images/menu.jpg" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col2">
+            <img src="images/g1-1.jpg" width="100%" id="productImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/g1-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/g1-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/g1-4.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/g1-5.jpg" width="100%" class="small-img">
+                </div>
+
+            </div>
+        </div>
+        <div class="col2">
+            <h1>Alto car</h1>
+            <h4>RS 1.5lakhs</h4>
+            <select>
+                <option>Select Colour</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Yellow</option>
+            </select>
+            <br>
+            <input type="number" value="1">
+            <a href="" clas="btn">Add To Cart <br></a>
+           <br><br>
+            <h3>Product Details</h3>
+            <br> <p>
+                This is one of the best cars in minimum Price.
+                Colour is Good and features are also good;
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+
+<div class="small-container">
+    <div class="row">
+        <div class="col4">
+            <img src="images/img5.jpg">
+            <h4> Alto Car</h4>
+            <p>Rs 2.5 Lakhs only</p>
+        </div>
+        <div class="col4">
+            <img src="images/img6.jpg">
+            <h4> Swift Car</h4>
+            <p>Rs 3.5 Lakhs only</p>
+        </div>
+        <div class="col4">
+            <img src="images/img7.jpg">
+            <h4> Nano Car</h4>
+            <p>Rs 4 Lakhs only</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>You can download from play store!</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.jpg">
+                <p>You can download from play store!It is our pleasure</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Joint Affiliate</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright -> Richa Goyal </p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle()
+    {
+     if(MenuItems.style.maxHeight = "0px")
+     {
+     MenuItems.style.maxHeight = "200px";
+     }
+     else
+     {
+     MenuItems.style.maxHeight = "0px";
+     }
+    }
+</script>
+
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementByClassName("small-img");
+
+    smallImg[0].onclick = function(){
+     productImg.src = smallImg[0].src;
+    }
+
+    smallImg[1].onclick = function(){
+     productImg.src = smallImg[1].src;
+    }
+
+    smallImg[2].onclick = function(){
+     productImg.src = smallImg[2].src;
+    }
+
+    smallImg[3].onclick = function(){
+     productImg.src = smallImg[3].src;
+    }
+
+
+</script>
+</body>
+</html>
